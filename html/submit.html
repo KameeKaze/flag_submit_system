@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flag Submit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="utf-8"/>
+    <script src="/assets/submit.js"></script>
+    <link rel="stylesheet" href="/assets/main.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <a>Flag Submit System</a>
+        <a class="btn" href="/">Home</a>
+        <a class="btn" href="/register">Registration</a>
+    </div>
+
+    <div class="centerMain">
+        <div class="center">
+            <input type="text" id="tokenField" placeholder="TOKEN"/>
+        </div>
+        <div class="center">
+            <input type="text" id="flagField" placeholder="FLAG"/>
+        </div>
+        <div class="center">
+            <button class="button" onclick="submit()">Submit</button>
+        </div>
+        <div id="resultField"></div>
+    </div>
+</body>
+</html>

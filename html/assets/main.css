@@ -1,0 +1,125 @@
+/*
+universal usecase
+*/
+
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #333;
+}
+
+h3 {
+    color: #EEE;
+}
+
+h5 {
+    color: #EEE;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: #333;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 650;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 20%;
+}
+
+input[type=text] {
+    background-color: #666;
+    color: #EEE;
+    float: left;
+    padding: 15px 32px;
+    margin: 4px 2px;
+    border: none;
+    font-size: 17px;
+    font-weight: 650;
+    width: 80%;
+}
+
+.center {
+    border: 5px;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    margin: 0 auto;
+    background: #333;
+    color: #444;
+}
+
+.btn:hover {
+    background-color: #444;
+}
+
+#resultFiled {
+    color: #EEE;
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+    font-weight: 650;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #222;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*
+index.html related
+*/
+
+#scoreboard {
+    width: 30%;
+    height: auto;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 25%;
+}
+
+.row {
+    border-top: 2px solid #EEE;
+}
+
+.name {
+    position: relative;
+    display: inline-block;
+    width: 90%;
+    line-height: 15px;
+    padding-left: 5%;
+}
+
+.score {
+    position: relative;
+    display: inline-block;
+    width: 10%;
+    text-align: right;
+    padding-right: 5%;
+}
+
+/*
+submit.html related
+*/
+
+.centerMain {
+    text-align: center;
+    padding-top: 20%;
+}

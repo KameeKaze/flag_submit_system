@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+    mysql:
+        container_name: FSS-database
+        image: mysql:8.0.28
+        restart: unless-stopped
+        environment:
+            MYSQL_ROOT_PASSWORD: ${DATABASE_PASSWORD}
+        volumes:
+            - ./mysql/init:/docker-entrypoint-initdb.d/
+            - data:/var/lib/mysql/
+        # DEBUG
+        ports:
+            - "3306:3306"
+    website:
+        container_name: Flag_Submit_System
+        build: .
+        restart: unless-stopped
+        ports:
+            - ${PORT}:8000
+        environment:
+            DATABASE_PASSWORD: ${DATABASE_PASSWORD}
+        volumes:
+            - ./fss.log:/fss.log
+volumes:
+    data:
+        driver: local

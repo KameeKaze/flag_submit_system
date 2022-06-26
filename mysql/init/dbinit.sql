@@ -1,0 +1,25 @@
+SET CHARSET UTF8;
+DROP DATABASE IF EXISTS fss;
+CREATE DATABASE fss DEFAULT CHARACTER SET utf8;
+
+USE fss;
+
+CREATE TABLE flags (
+    id    INT AUTO_INCREMENT PRIMARY KEY,
+    flag  VARCHAR(64) NOT NULL,
+    score INT NOT NULL
+);
+
+CREATE TABLE users ( 
+    id       INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(128) NOT NULL,
+    token    VARCHAR(36) NOT NULL,
+    flags   VARCHAR(256)
+);
+
+/*
+Testing values
+*/
+INSERT INTO flags VALUES (1, "cat", 30);
+INSERT INTO flags VALUES (2, "wolf", 100);
+INSERT INTO flags VALUES (3, "rabbit", 150);
